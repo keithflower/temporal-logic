@@ -35,7 +35,7 @@ The result list ```'(> mi di si oi)``` indicates that several relationships are 
 
 ![Symptom example](example.png)
 
-This implementation in Racket is based on Stephen Tanimoto's Common Lisp code as described in Chapter 8 ("Commonsense Reasoning") of his book "The Elements of Artificial Intelligence".
+This implementation in Racket is based on Stephen Tanimoto's Common Lisp code as described in Chapter 8 ("Commonsense Reasoning") of his book *Elements of Artificial Intelligence*.
 
  There are 13 possible relationships between intervals, encoded as follows:
 
