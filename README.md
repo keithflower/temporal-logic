@@ -31,7 +31,9 @@ interval hypokalemia
 interval cough
 '(> mi di si oi)
 ```
-The results '(> mi di si oi) indicate that several relationships are possible - the episode of neutrophilia either came after the fever (but not immediately after), did come immediately after the fever, started concurrently with the fever, or overlapped with the duration of the fever.
+The results '(> mi di si oi) indicate that several relationships are possible - the episode of neutrophilia either came after the fever (not necessarily immediately after), did come immediately after the fever, started concurrently with the fever, and/or overlapped with the duration of the fever.
+
+![Symptom example](example.png)
 
 This implementation in Racket is based on Stephen Tanimoto's Common Lisp code as described in Chapter 8 ("Commonsense Reasoning") of his book "The Elements of Artificial Intelligence".
 
