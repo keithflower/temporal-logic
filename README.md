@@ -33,3 +33,21 @@ interval cough
 ```
 The results '(> mi di si oi) indicate that several relationships are possible - the episode of neutrophilia either came after the fever (but not immediately after), did come immediately after the fever, started concurrently with the fever, or overlapped with the duration of the fever.
 
+This implementation in Racket is based on Stephen Tanimoto's Common Lisp code as described in Chapter 8 ("Commonsense Reasoning") of his book "The Elements of Artificial Intelligence".
+
+ Their are 13 possible relationships between two intervals, and they are encoded as follows:
+
+     "before" <
+     "after" >
+     "during" d
+     "contains" di
+     "overlaps" o
+     "overlapped-by" oi
+     "meets" m
+     "met-by" mi
+     "starts" s
+     "started-by" si
+     "finishes" f
+     "finished-by" fi
+     "equals" =
+
