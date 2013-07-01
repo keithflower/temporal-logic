@@ -1,0 +1,10 @@
+digraph symptoms {
+ node [shape=record];
+ 1 [shape=record,label="{{ fever | cough} | neutrophilia} |{hypokalemia}"];
+ 2 [shape=record,label=" fever |{{ cough} | neutrophilia} |{hypokalemia}"];
+ 3 [shape=record,label=" fever |{{ cough} | {|neutrophilia}} |{hypokalemia}"];
+ 4 [shape=record,label=" fever |{{ cough} | {neutrophilia|}} |{hypokalemia}"];
+ 1 -> 2 -> 3 -> 4 [style=invis];
+}
+
+
