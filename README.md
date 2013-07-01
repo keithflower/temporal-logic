@@ -31,25 +31,25 @@ interval hypokalemia
 interval cough
 '(> mi di si oi)
 ```
-The results '(> mi di si oi) indicate that several relationships are possible - the episode of neutrophilia either came after the fever (not necessarily immediately after), did come immediately after the fever, started concurrently with the fever, and/or overlapped with the duration of the fever.
+The result list ```'(> mi di si oi)``` indicates that several relationships are possible - the episode of neutrophilia either came after the fever (not necessarily immediately after), did come immediately after the fever, started concurrently with the fever, and/or overlapped with the duration of the fever.
 
 ![Symptom example](example.png)
 
 This implementation in Racket is based on Stephen Tanimoto's Common Lisp code as described in Chapter 8 ("Commonsense Reasoning") of his book "The Elements of Artificial Intelligence".
 
- Their are 13 possible relationships between two intervals, and they are encoded as follows:
+ There are 13 possible relationships between intervals, encoded as follows:
 
-     "before" <
-     "after" >
-     "during" d
-     "contains" di
-     "overlaps" o
-     "overlapped-by" oi
-     "meets" m
-     "met-by" mi
-     "starts" s
-     "started-by" si
-     "finishes" f
-     "finished-by" fi
-     "equals" =
+     "before"          <
+     "after"           >
+     "during"          d
+     "contains"        di
+     "overlaps"        o
+     "overlapped-by"   oi
+     "meets"           m
+     "met-by"          mi
+     "starts"          s
+     "started-by"      si
+     "finishes"        f
+     "finished-by"     fi
+     "equals"          =
 
