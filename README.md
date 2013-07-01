@@ -10,7 +10,7 @@ Allen interval calculus is a way to reason about temporal events. For example, g
 One can make queries of the relationships between intervals, for example:
 
     When did her neutrophila occur in relationship with her fever?
-
+``` Racket
 define (symptoms)
   
   (set-events '(fever neutrophilia hypokalemia cough))
@@ -28,6 +28,6 @@ interval neutrophilia
 interval hypokalemia
 interval cough
 '(> mi di si oi)
-
+```
 The results '(> mi di si oi) indicate that the episode of neutrophilia either came after the fever (but not immediately), came immediately after the fever, started concurrently with the fever, or was overlapped with the duration of the fever.
 
